@@ -1,0 +1,138 @@
+.contactPage {
+  box-sizing: border-box;
+  /* height: 530px; */ /* commented because of removing form*/
+  font-family: JetBrains Mono, monospace;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactPage > div {
+  flex: 1 1 300px;
+  /* margin-bottom: 2.5rem; */ /* commented because of removing form*/
+}
+
+/* ------- socials css --------- */
+
+.socials {
+  margin-right: 2rem;
+  /* border-right: 1px solid #f9826c; */ /* commented because of removing form*/
+  counter-reset: line;
+}
+
+.contactPage > div > div:first-child {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.socials > div > div::before {
+  margin-right: 1rem;
+  content: counter(line);
+  counter-increment: line;
+  color: grey;
+}
+
+.socials > div:last-child {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.socials span,
+.socials a {
+  color: #f9826c;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* ------- form css --------- */
+
+.form {
+  display: none;
+}
+
+/* --- remove above line to show form --- */
+
+.formContent {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContent label {
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.nameAndEmail {
+  display: flex;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  font-size: 1rem;
+  background: #1f2428;
+  color: #efefef;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #f9826c;
+}
+
+.button {
+  width: auto;
+  /* display: inline; */
+
+  box-sizing: border-box;
+  background: #f9826c;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  color: #24292e;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.button:hover {
+  box-shadow: 3px 3px 10px black;
+}
+
+/* 
+.formContent button {
+  box-sizing: border-box;
+  background: #f9826c;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  color: #24292e;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.formContent button:hover {
+  box-shadow: 3px 3px 10px black;
+}
+*/
+
+@media (max-width: 1200px) {
+  .contactPage {
+    flex-direction: column;
+  }
+
+  .socials {
+    border: none;
+  }
+}

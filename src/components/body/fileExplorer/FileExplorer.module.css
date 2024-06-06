@@ -1,0 +1,27 @@
+.fileExplorer {
+  background: #1f2428;
+  border-right: 1px solid #191d20;
+}
+
+.explorerHead {
+  padding: 0.625rem 0 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+.portfolioDropDown {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.fileItems {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .fileExplorer {
+    display: none;
+  }
+}

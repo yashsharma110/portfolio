@@ -1,0 +1,21 @@
+.fileItem {
+  padding: 0.2rem 1rem;
+  font-size: 0.875rem;
+  display: flex;
+}
+
+.fileItem:hover {
+  background: #24292e;
+}
+
+.fileItem > div {
+  display: inline;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+img {
+  display: inline;
+  width: 1.125rem;
+}

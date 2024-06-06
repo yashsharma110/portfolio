@@ -1,0 +1,94 @@
+.projectCard {
+  font-family: JetBrains Mono, monospace;
+  background: #1f2428;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column;
+  opacity: 0.9;
+  transition: 0.25s ease-in-out;
+}
+
+.projectCard:hover {
+  box-shadow: 3px 3px 10px black;
+  opacity: 1;
+}
+
+/* ----- image part -------------*/
+
+.imageDiv {
+  width: 100%;
+  height: 130px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageDiv > img {
+  width: 130px;
+  height: 100%;
+}
+
+/* ----- text content part -------*/
+
+.contentDiv {
+  flex-grow: 1;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.aboutProject > h3 {
+  margin: 0;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.aboutProject > p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+}
+
+/* ---- tags in content ---- */
+
+.tags {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.tags > * {
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+  border: 1px solid #f9826c;
+  border-radius: 20px;
+  cursor: default;
+  display: inline;
+}
+
+.tags > *:hover {
+  background: #f9826cb3;
+}
+
+/* ---- links in content ----- */
+
+.links {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links > a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #f9826c;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.links > a:hover {
+  box-shadow: inset 0 -1.5rem #f9826c;
+}

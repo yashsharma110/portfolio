@@ -1,0 +1,18 @@
+.body {
+  height: 92.5%;
+  width: 100vw;
+  display: flex;
+}
+
+.activityBar {
+  flex: 0 0 3rem;
+}
+
+.fileExplorer {
+  flex: 1 1 10rem;
+}
+
+.textArea {
+  width: 200px;
+  flex: 20 20 600px;
+}

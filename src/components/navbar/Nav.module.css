@@ -1,0 +1,68 @@
+.nav {
+  height: 4%;
+  background: #1f2428;
+  font-size: 14px;
+  border-bottom: 1px solid #191d20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------ logo and toolbar -------- */
+
+.logo-and-toolbar {
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-and-toolbar > * {
+  cursor: pointer;
+}
+
+.vs-code-icon {
+  width: 1.2rem;
+}
+
+@media (max-width: 950px) {
+  .logo-and-toolbar {
+    width: 1.5rem;
+  }
+
+  .logo-and-toolbar > :not(:first-child) {
+    display: none;
+  }
+}
+
+/* ----- header ------------ */
+
+.header-text {
+  /* position: relative;
+  right: 150px; */
+}
+
+/* ----- control buttons --------- */
+
+.control-buttons {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.control-buttons > a {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+.yellow-button {
+  background: #f1fa8c;
+}
+
+.green-button {
+  background: #50fa7b;
+}
+
+.red-button {
+  background: #f55;
+}

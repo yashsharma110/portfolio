@@ -1,0 +1,32 @@
+.activityBar {
+  color: #6a737d;
+  background: #24292e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activityBar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activityBar > div > div > * {
+  width: 3rem;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 0.65rem 0;
+  cursor: pointer;
+}
+
+.activityBar > div > *:hover {
+  background: #1f2428;
+}
+
+.selected {
+  border-left: 2px solid #f9826c;
+  color: #e1e4e8;
+  background: #1f2428;
+}

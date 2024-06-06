@@ -1,0 +1,97 @@
+.homePage {
+  height: 100%;
+}
+
+.background {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50vw;
+  margin-left: 27vw;
+  position: absolute;
+  font-size: 8.5rem;
+  font-weight: 1000;
+  opacity: 0.03;
+}
+
+.foreground {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+/* 
+.intro > div:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-weight: 300;
+} */
+
+.buttons > button {
+  all: unset;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
+}
+
+.buttons > button:hover {
+  box-shadow: 3px 3px 10px black;
+}
+
+.buttons > button:first-child {
+  background: #f9826c;
+}
+
+.buttons > button:nth-of-type(2) {
+  border: 2px solid #f9826c;
+}
+
+/* ----- typewriter effect ------- */
+
+.typewriter > h1 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #f9826c; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s ease-out infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f9826c;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .background {
+    display: none;
+  }
+
+  .foreground {
+    justify-content: center;
+  }
+}

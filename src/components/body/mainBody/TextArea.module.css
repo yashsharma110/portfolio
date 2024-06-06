@@ -1,0 +1,20 @@
+.textArea {
+  background: #24292e;
+  display: flex;
+  flex-direction: column;
+}
+
+.headings {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 2.35rem;
+  flex: 0 0 7%;
+  box-sizing: border-box;
+  background: #1f2428;
+  display: flex;
+  align-items: center;
+}
+
+.textPage {
+  flex-grow: 1;
+}
